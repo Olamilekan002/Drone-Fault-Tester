@@ -2,7 +2,9 @@
 
 ### UmojaHack Africa 2022 #3: Faulty Air Quality Sensor Brief Description.
 
-The objective of this challenge is to create a classification model to identify a device has an off set fault or not, regardless of the device. The model can be used by AirQo to automatically flag a device that is returning faulty data., have a look on [Zindi](https://zindi.africa/competitions/umojahack-africa-2022-beginner-challenge).
+The objective of this challenge is to create a classification model to identify a device has an off set fault or not, regardless of the device. The model can be used by AirQo to automatically flag a device that is returning faulty data. 
+
+Have a look on [Zindi](https://zindi.africa/competitions/umojahack-africa-2022-beginner-challenge).
 
 ### Approach ⏬
 * Import all necessary Libraries

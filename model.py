@@ -62,8 +62,8 @@ def makePrediction(test_pre):
     predict_val = 0
     confidence = 0
     predict_val = classifier.predict(test_pre)
-    confidence = classifier.predict_proba(test_pre)[:,1][0].round(2)
-    confidence*=100
+    confidence = int(classifier.predict_proba(test_pre)[:,1][0].round(2) * 100)
+    
     
     if predict_val == 1:
         predict_real = "The Drone is Faulty"
@@ -72,6 +72,6 @@ def makePrediction(test_pre):
         
     return predict_real, confidence
 
-#print(predict('2021-11-03 04:06:31','50','39','34','50'))
+#print(predict('2021-11-03 04:06:31','50','39','54','50'))
 # -*- coding: utf-8 -*-
 

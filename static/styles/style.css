@@ -1,0 +1,94 @@
+
+*{
+    padding: 20,20,20,20;
+    margin: 20,20,20,20;
+    text-align: center;
+    
+    transition: all 1s;
+    /* background-color: rgb(19, 134, 134); */
+}
+.head{
+   
+    background-color: #FDFFF5;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30pt;
+    padding: 30px;
+    color:green;
+    font-style: inherit;
+    text-align: center;
+    
+  
+        
+}
+.button{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color:white;
+    background-color: black;
+    font-size: larger;
+    border:none;
+    transition: all 1s;;
+    }
+.button:hover{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color:black;
+    width: 70%;
+    background-color:green;
+    font-size: larger;
+    border: 1px solid;
+    }
+form{
+    font-size: 15pt;
+    margin: 20;
+    display: block;
+
+    
+}
+form input{
+    text-align: left;
+    font-size: 12pt;
+    padding: 5px;
+    padding-left:8px;
+    width: 70%;
+    margin-top: 7px;
+    margin-left: 5px;
+    font-size: larger;
+    border-radius: 5px;
+    border: 1px solid rgb(19, 7, 7);
+}
+
+select{
+    direction: ltr;
+    text-align-last: left;
+    font-size: 15pt;
+    padding: 5px;
+    width: 70.8%;
+    margin-top: 7px;
+    margin-left: 5px;
+    font-size: larger;
+    border-radius: 5px;
+    border: 1px solid rgb(19, 7, 7);
+}
+select > option.hidden_option{
+    display: none;
+}
+
+table{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    border: solid black;
+    padding: 5px;
+    background-color: white;
+
+}
+table td,th{
+    border: 1px solid rgb(7, 7, 7);
+    padding: 20px;
+    font-size: 12pt;
+    font-size: larger;
+}

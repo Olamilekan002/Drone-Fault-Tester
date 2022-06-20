@@ -23,9 +23,7 @@ def testing():
         predict_real, confid = model.predict(datetime, sensor1_PM2, sensor2_PM2,
                                              temperature, relative_humidity)
 
-    return render_template("testing.html",target = predict_real, confidence = confid,
-                           date_input = datetime, sensor1_input = sensor1_PM2, sensor2_input = sensor2_PM2,
-                           temp_input = temperature, relative_input = relative_humidity)
+    return render_template("testing.html",target = predict_real, confidence = confid)
 
 @app.route("/")
 def Index():

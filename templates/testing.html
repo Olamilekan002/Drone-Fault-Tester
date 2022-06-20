@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Quality Tester</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/style.css') }}"/>
+</head>
+<body>
+     
+    <header class="head">
+        <label for="">Drone Quality Tester</label>
+    </header>
+   
+    <hr>
+<br>
+<br>
+    <form action="/" method="POST" >
+    <input type="date" name="datetime" id="" placeholder="Date" value="{{request.form["datetime"]}}"><br>
+    <input type="number" name="sensor1_PM2" id="" placeholder="Enter Sensor1 Value" min="1" max="50" value="{{request.form["sensor1_PM2"]}}"><br>
+    <input type="number" name="sensor2_PM2" id="" placeholder="Enter Sensor2 Value"min="1" max="50"><br>
+    <input type="number" name="temperature" id="" placeholder="Enter Temperature" min="16" max="35"><br>
+    <input type="number" name="relative_humidity" id="" placeholder="Enter relative_humidity"min="27" max="100"><br>
+<br>
+<br>
+
+    <input type="submit" value="Check" class="button">
+
+</form> 
+<br>
+<br>
+<table>
+   
+    <tbody>
+        <tr>
+            <td> <b>Input</b> </td>
+            <td> Datetime: {{date_input}}  <br>
+            Sensor1_PM2: {{sensor1_input}} <br>
+            Sensor2_PM2: {{sensor2_input}} <br>
+            Temperature: {{temp_input}} <br>
+            Relative_Humidity: {{relative_input}} <br>
+            
+            </td>
+            
+        </tr>
+        <tr>
+            <td> <B>Prediction</B> </td>
+            <td>{{target}}</td>
+            
+        </tr>
+        <tr>
+            <td> <b>Model confidence</b> </td>
+            <td>{{confidence}}</td>
+            
+        </tr>
+    </tbody>
+</table>
+   <br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

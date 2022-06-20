@@ -5,6 +5,7 @@
 The objective of this challenge is to create a classification model to identify a device has an off set fault or not, regardless of the device. The model can be used by AirQo to automatically flag a device that is returning faulty data. 
 
 Have a look on [Zindi](https://zindi.africa/competitions/umojahack-africa-2022-beginner-challenge).
+Deployment [link](https://drone-tester.herokuapp.com/testing).
 
 ### Approach ⏬
 * Import all necessary Libraries
@@ -34,4 +35,4 @@ The base model was RandomForest with an accuracy of 93% using stratifiedKFold fo
 #### Deployment ✈️
 The model was deployed to Heroku using flask and other necessary libraries.
 
-[link]()
+[link](https://drone-tester.herokuapp.com/)

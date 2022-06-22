@@ -18,7 +18,7 @@
 <br>
 <br>
     <form action="/testing" method="POST" >
-    <input type="date" name="datetime" id="" placeholder="Date" value="{{request.form["datetime"]}}" required><br>
+    <input type="date" name="datetime" id="" placeholder="Date" value="{{request.form["datetime"]}}" max="2022-12-25" min="2019-01-01" required><br>
     <input type="number" name="sensor1_PM2" id="" placeholder="Enter Sensor1 Value" min="1" max="50" value="{{request.form["sensor1_PM2"]}}" required><br>
     <input type="number" name="sensor2_PM2" id="" placeholder="Enter Sensor2 Value"min="1" max="50" value="{{request.form["sensor2_PM2"]}}" required><br>
     <input type="number" name="temperature" id="" placeholder="Enter Temperature" min="16" max="35" value="{{request.form["temperature"]}}" required><br>
